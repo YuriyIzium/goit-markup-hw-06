@@ -511,14 +511,40 @@
         </div>
       </div>
     </footer>
+
     <!-- Modal Window -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop -is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon">
             <use width="10" height="10" href="images/icons.svg#vector"></use>
           </svg>
         </button>
+        <div class="modal-container">
+          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+          <form class="modal-form">
+            <label class="modal-label" for="username">Имя</label>
+            <input type="name" name="username" id="username" autofocus />
+
+            <label class="modal-label" for="tel">Телефон</label>
+            <input type="tel" name="telephone" id="tel" />
+
+            <label class="modal-label" for="mail">Телефон</label>
+            <input type="email" name="email" id="mail" />
+
+            <label class="modal-label" for="coment">Комментарий</label>
+            <textarea class="modal-coment"
+              name="coment"
+              id="coment"
+              rows="10"
+              placeholder="Введите текст"
+            >
+            </textarea>
+				<input class="modal-checker" type="checkbox" name="accept" id="accept">
+				<label class="modal-label-checker" for="accept">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank">Условия договора</a></label>
+				<button class="modal-form-btn" type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <!-- JS -->

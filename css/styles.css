@@ -716,6 +716,9 @@ input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  line-height: 1.25;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-form-btn {
@@ -809,3 +812,42 @@ input {
   width: 10px;
   height: 10px;
 }
+
+.modal-container {
+padding: 40px;}
+
+.modal-title {
+	font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+color: var(--title-collor)}
+
+.modal-form {
+display: flex;
+flex-direction: column;}
+
+.modal-coment {
+resize: none;}
+
+.modal-checker {
+}
+
+.modal-form-btn {
+	display: flex;
+align-items: center;
+text-align: center;
+width: 200px;
+height: 50px;
+
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: none;
+border-radius: 4px;
+font-weight: 700;
+line-height: 1.88;
+
+
+letter-spacing: 0.06em;
+
+color: var(--primary-white)}
