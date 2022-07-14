@@ -520,31 +520,61 @@
             <use width="10" height="10" href="images/icons.svg#vector"></use>
           </svg>
         </button>
-        <div class="modal-container">
-          <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
-          <form class="modal-form">
-            <label class="modal-label" for="username">Имя</label>
-            <input type="name" name="username" id="username" autofocus />
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="modal-form" name="modal-form">
+          <div class="modal-input-container">
+            <div class="modal-form-fild">
+              <label class="modal-label" for="user-name">Имя</label>
+              <input
+                class="modal-input"
+                type="name"
+                name="user-name"
+                id="user-name"
+              />
+            </div>
+            <div class="modal-form-fild">
+              <label class="modal-label" for="tel">Телефон</label>
+              <input class="modal-input" type="tel" name="user-tel" id="tel" />
+            </div>
+            <div class="modal-form-fild">
+              <label class="modal-label" for="mail">Почта</label>
+              <input
+                class="modal-input"
+                type="email"
+                name="user-email"
+                id="mail"
+              />
+            </div>
+            <div class="modal-form-fild">
+              <label class="modal-label" for="coment">Комментарий</label>
+              <textarea
+                class="modal-coment"
+                name="user-coment"
+                id="coment"
+                placeholder="Введите текст"
+              >
+              </textarea>
+            </div>
+          </div>
 
-            <label class="modal-label" for="tel">Телефон</label>
-            <input type="tel" name="telephone" id="tel" />
-
-            <label class="modal-label" for="mail">Телефон</label>
-            <input type="email" name="email" id="mail" />
-
-            <label class="modal-label" for="coment">Комментарий</label>
-            <textarea class="modal-coment"
-              name="coment"
-              id="coment"
-              rows="10"
-              placeholder="Введите текст"
-            >
-            </textarea>
-				<input class="modal-checker" type="checkbox" name="accept" id="accept">
-				<label class="modal-label-checker" for="accept">Соглашаюсь с рассылкой и принимаю <a href="" target="_blank">Условия договора</a></label>
-				<button class="modal-form-btn" type="submit">Отправить</button>
-          </form>
-        </div>
+          <div class="modal-form-fild-checker">
+            <input
+              class="modal-input-checker"
+              type="checkbox"
+              name="accept"
+              id="accept"
+            />
+            <label class="modal-label-checker" for="accept"
+              >Соглашаюсь с рассылкой и принимаю
+              <span class="terms-contract-span"
+                ><a href="" target="_blank">Условия договора</a></span
+              >
+            </label>
+          </div>
+          <div class="modal-form-fild-btn">
+            <button class="modal-form-btn" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
     <!-- JS -->
