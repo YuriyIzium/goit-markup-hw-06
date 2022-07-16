@@ -490,12 +490,15 @@
         <div class="footer-sub">
           <b class="footer-sub-title">Подпишитесь на рассылку</b>
           <form class="footer-form">
-            <input
+				<label>
+					<input
               class="footer-form-email"
               type="email"
               name="email"
               placeholder="E-mail"
             />
+				</label>
+            
             <button class="footer-form-btn" type="submit">
               Подписаться
               <svg
@@ -513,11 +516,11 @@
     </footer>
 
     <!-- Modal Window -->
-    <div class="backdrop -is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
-          <svg class="modal-close-icon">
-            <use width="12" height="12" href="images/icons.svg#vector"></use>
+          <svg class="modal-close-icon" width="12" height="12" aria-hidden="true">
+            <use href="./images/icons.svg#vector"></use>
           </svg>
         </button>
         <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
@@ -532,11 +535,10 @@
                   name="user-name"
                   id="user-name"
                 />
-                <svg class="modal-icon-svg">
+                <svg class="modal-icon-svg" width="18"
+                    height="18" aria-hidden="true">
                   <use
-                    width="18"
-                    height="18"
-                    href="images/icons.svg#person"
+                    href="./images/icons.svg#person"
                   ></use>
                 </svg>
               </div>
@@ -550,8 +552,8 @@
                   name="user-tel"
                   id="tel"
                 />
-                <svg class="modal-icon-svg">
-                  <use width="18" height="18" href="images/icons.svg#tel"></use>
+                <svg class="modal-icon-svg" width="18" height="18" aria-hidden="true">
+                  <use  href="./images/icons.svg#tel"></use>
                 </svg>
               </div>
             </div>
@@ -564,11 +566,11 @@
                   name="user-email"
                   id="mail"
                 />
-                <svg class="modal-icon-svg">
-                  <use
+                <svg class="modal-icon-svg"
                     width="18"
-                    height="18"
-                    href="images/icons.svg#email"
+                    height="18" aria-hidden="true">
+                  <use
+                    href="./images/icons.svg#email"
                   ></use>
                 </svg>
               </div>
@@ -592,12 +594,13 @@
                 name="accept"
                 id="accept"
               />
-              <span class="modal-custom-checker"></span>
-              Погоджуюся з розсилкою та приймаю<span
-                class="terms-contract-span"
-              >
-                <a href="" target="_blank">Умови договору</a></span
-              >
+              <svg class="modal-custom-checker" width="16" height="15" aria-hidden="true">
+					<use href="./images/icons.svg#vector-chek"></use>
+				  </svg>
+              Соглашаюсь с рассылкой и принимаю
+				  <span class="terms-contract-span">
+                <a href="" target="_blank">Условия договора</span
+              ></a>
             </label>
           </div>
           <div class="modal-form-fild-btn">
