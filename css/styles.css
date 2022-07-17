@@ -855,12 +855,9 @@ input {
   transition: border-color 250ms var(--timing-function);
 }
 
-.modal-input:not(:last-child) {
-  margin-bottom: 12px;
-}
-
 .modal-input-wrapper {
   position: relative;
+  margin-bottom: 12px;
 }
 
 .modal-icon-svg {
