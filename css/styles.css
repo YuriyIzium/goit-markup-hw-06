@@ -833,12 +833,14 @@ input {
   margin-bottom: 20px;
 }
 
+
 .modal-label {
   display: block;
   font-size: 12px;
   margin-bottom: 4px;
   line-height: 1.16;
   letter-spacing: 0.01em;
+	outline: var(--accent-color);
 }
 
 .modal-input {
@@ -952,7 +954,11 @@ input {
   background-color: var(--accent-color);
 }
 
-.terms-contract-span a {
+.modal-def-checker:focus + .modal-custom-checker {
+	border: 2px solid var(--accent-color);
+}
+
+.terms-contract-span {
   display: inline-block;
   color: var(--accent-color);
 }
