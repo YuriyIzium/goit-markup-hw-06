@@ -630,7 +630,7 @@ input {
 }
 
 .footer-logo-address {
-  margin-right: auto;
+  margin-right: 70px;
 }
 
 .footer-contacts .link {
@@ -650,11 +650,6 @@ input {
 
 .footer-contacts .item:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-social-links {
-  padding-top: 12px;
-  margin-right: 93px;
 }
 
 .social-title {
@@ -692,7 +687,7 @@ input {
 }
 
 .footer-sub {
-  padding-top: 12px;
+  margin-left: auto;
 }
 
 .footer-sub-title {
@@ -826,6 +821,7 @@ input {
 
 .modal-title {
   display: block;
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -834,12 +830,7 @@ input {
 }
 
 .modal-input-container {
-  margin-top: 12px;
   margin-bottom: 20px;
-}
-
-.modal-form-fild:not(:last-child) {
-  margin-bottom: 10px;
 }
 
 .modal-label {
@@ -862,6 +853,10 @@ input {
   border-radius: 4px;
 
   transition: border-color 250ms var(--timing-function);
+}
+
+.modal-input:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .modal-input-wrapper {
